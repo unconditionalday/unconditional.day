@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     getFeed()
-  }, [query])
+  })
 
   return (
     <div className="flex flex-col h-screen">
@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       </div>
       <main className='m-auto grid grid-cols-3 gap-4 pb-10'>
         {feeds.map((feed) => (
-          <a href={feed.link} className="article bg-white p-6 block max-w-sm rounded-lg border border-black hover:shadow-2xl dark:bg-black dark:border-black dark:hover:bg-black">
+          <a key={feed.link} href={feed.link} className="article bg-white p-6 block max-w-sm rounded-lg border border-black hover:shadow-2xl dark:bg-black dark:border-black dark:hover:bg-black">
             <h6 className='font-extralight'>{feed.source}</h6>
             <h5 className="p-2 text-2xl text-start font-bold tracking-tight text-gray-900 dark:text-white">{feed.title}</h5>
             <hr />
