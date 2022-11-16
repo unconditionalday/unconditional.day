@@ -6,7 +6,12 @@ module.exports = {
     "./pages/**/*.{ts,tsx}",
     "./public/**/*.html",
   ],
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+    {
+      autoprefixer: {},
+    }
+  ],
   theme: {},
   darkMode: 'class',
 };

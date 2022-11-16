@@ -2,7 +2,6 @@ import type { NextPage } from 'next'
 import { useEffect, useState } from 'react'
 import Footer from '../components/Footer';
 import { FeedItem, DefaultService } from '../generated'
-import {AiFillInfoCircle} from 'react-icons/ai'
 
 const Home: NextPage = () => {
   const [query, setQuery] = useState("");
@@ -22,15 +21,12 @@ const Home: NextPage = () => {
     }
   }
 
-  useEffect(() => {
-    getFeed()
-  })
 
   return (
     <div className="flex flex-col h-screen">
-      <div className="header p-20 grid grid-rows-3 gap-5">
-        <h1 className="title text-8xl font-black text-center">Unconditional.</h1>
-        <h2 className="subtitle text-xl font-light text-center">Give to your think an <a className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 shine' href='about'>Unconditional think</a></h2>
+      <div className="header p-20 grid grid-rows-3 gap-5 text-center">
+        <h1 className="title text-8xl font-black">Unconditional.</h1>
+        <h2 className="subtitle text-xl font-light">Give to your think an <a className='font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3' href='about'>Unconditional think</a></h2>
         <form className='w-80 mx-auto' onSubmit={getFeed}>
           <label htmlFor="default-search" className="text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
           <div className="relative">
