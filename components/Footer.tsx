@@ -1,13 +1,13 @@
 export const Footer = () => {
     return (
-        <footer className="footer flex flex-row bg-black text-white p-6">
-            <div className="footer-left flex flex-col">
-                <h1 className="title text-4xl font-black rounded-lg">Unconditional.</h1>
-                <p className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">© 2022 All rights reserved.</p>
+        <footer className="footer flex flex-col md:flex-row justify-between md:p-10 text-black border">
+            <div className="subfooter-left flex flex-col md:flex-col md:gap-2 px-2 md:px-10">
+                <h1 className="title text-xl md:text-2xl font-black rounded-lg">Unconditional.</h1>
+                <p className="text-transparent text-md md:text-xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">© 2022 All rights reserved.</p>
             </div>
-            <div className="footer-right m-auto">
-                <p className="text-6xl font-black rounded-lg">Lorem ipsum footer</p>
-                <ul className="flex gap-4  text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">
+            <div className="subfooter-right flex flex-col md:flex-col md:gap-2 px-2 md:px-10">
+                <p className="title text-xl md:text-2xl font-black rounded-lg">Lorem,Ipsum,Sum </p>
+                <ul className="text-md md:text-xl flex gap-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 ">
                     <li>Github</li>
                     <li>Twitter</li>
                     <li>License</li>
