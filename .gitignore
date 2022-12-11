@@ -29,7 +29,9 @@ node_modules/
 
 # dotenv and direnv environment variable files
 .env
-.env.*
+.env.dev
+.env.prod
+.env.test
 
 # yarn v2
 .yarn/cache

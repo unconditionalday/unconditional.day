@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Link from 'next/link'
 import Footer from '../components/Footer'
 import { Header } from '../components/Header'
 
@@ -15,8 +16,9 @@ const About: NextPage = () => {
                 <p>The project is completely <a href=''>open source</a> and anyone can contribute by improving its code,usability and the sources of information it refers to. The server is re-deployed hourly by indexing and serving the new articles served by the sources it finds in the <a href=''>public source file</a>. That's it! nothing more and nothing less.</p>
                 <h1>The most important thing</h1>
                 <p> Let us be clear, the project is intended to provide independent and free information, not disinformation. We in no way accept biased, disrespectful and discriminatory sources We believe in public information and respect the great work that different news outlets do every day. </p>
-                
-                <a className='font-bold text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block  mx-2' href='/'>Start your Unconditional.</a>
+
+                <Link className='font-bold text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block mx-2' href='/'>Start your Unconditional.</Link>
+
             </article>
 
             <Footer />
