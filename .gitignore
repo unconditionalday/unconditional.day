@@ -43,3 +43,5 @@ node_modules/
 # Next.js
 .next/
 
+# Vercel
+.vercel/
