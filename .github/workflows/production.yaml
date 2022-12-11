@@ -6,8 +6,9 @@ on:
   push:
     branches:
       - main
+
 jobs:
-  Deploy-Production:
+  Deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
