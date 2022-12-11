@@ -6,17 +6,19 @@ const About: NextPage = () => {
     return (
         <div className="flex flex-col h-screen">
             <Header />
-            <article className="prose lg:prose-xl p-10 md:p-0 md:m-auto">
-                <h1>Garlic bread with cheese: What the science tells us</h1>
-                <p>
-                    Pensiamo che il mondo debba essere un posto migliore e quindi libero. Questo progetto nasce sopratutto da un bisogno personale: cercare contenuti in maniera completamente libera e autonoma. Nessuna targetizzazione, nessun ads, nessun reccomender system, nessun algoritmo che sceglie per noi.
-                </p>
-
-                <h1>Lorem </h1>
+            <article className="prose lg:prose-xl p-10 md:p-5 md:m-auto">
+                <h1>A place free of any outside influence for an unconditional and spontaneous information research.</h1>
+                <p>Unconditional aims to be a place free of any outside influence for free and spontaneous information research. This project was born above all from a personal need: To inform ourselves by developing our own critical sense and thinking and not to let someone else do it for us.</p>
+                <h1>Where you are the only one who can decide what to think.</h1>
+                <p> This project uses no targeting system, no recommendation or ranking system, and no profiling. The "database" referred to is a public static file made available to the community, for the community. In fact, the sources are decided by it. The only thing that is done is to make the information available in a structured way, so that it can be easily consulted and used.</p>
+                <h1>It is much simpler than you think, help us.</h1>
+                <p>The project is completely <a href=''>open source</a> and anyone can contribute by improving its code,usability and the sources of information it refers to. The server is re-deployed hourly by indexing and serving the new articles served by the sources it finds in the <a href=''>public source file</a>. That's it! nothing more and nothing less.</p>
+                <h1>The most important thing</h1>
+                <p> Let us be clear, the project is intended to provide independent and free information, not disinformation. We in no way accept biased, disrespectful and discriminatory sources We believe in public information and respect the great work that different news outlets do every day. </p>
+                
+                <a className='font-bold text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block md:inline md:w-auto mx-2' href='/'>Start your Unconditional.</a>
             </article>
-            <main className='m-auto container'>
 
-            </main>
             <Footer />
         </div >
     )
