@@ -16,7 +16,7 @@ const About: NextPage = () => {
                 <h1>The most important thing</h1>
                 <p> Let us be clear, the project is intended to provide independent and free information, not disinformation. We in no way accept biased, disrespectful and discriminatory sources We believe in public information and respect the great work that different news outlets do every day. </p>
                 
-                <a className='font-bold text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block md:inline md:w-auto mx-2' href='/'>Start your Unconditional.</a>
+                <a className='font-bold text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block  mx-2' href='/'>Start your Unconditional.</a>
             </article>
 
             <Footer />
