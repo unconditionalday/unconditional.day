@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "npx prettier --write .",
     "generate": "openapi --input /Users/luigibarbato/Dev/Projects/api/swagger.yaml --output ./generated",
-    "prepare": "husky install"
+    "prepare": "npx husky install"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.8",
