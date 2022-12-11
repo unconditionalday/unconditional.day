@@ -34,8 +34,8 @@ const About: NextPage = () => {
           can contribute by improving its code,usability and the sources of
           information it refers to. The server is re-deployed hourly by indexing
           and serving the new articles served by the sources it finds in the{" "}
-          <Link href="/">public source file</Link>. That&quot;s it! nothing more
-          and nothing less.
+          <Link href="/">public source file</Link>. That's it! nothing more and
+          nothing less.
         </p>
         <h1>The most important thing</h1>
         <p>
