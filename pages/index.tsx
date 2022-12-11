@@ -33,7 +33,7 @@ const Home: NextPage = () => {
       <div className="flex flex-col min-h-screen">
         <header className="header text-center flex flex-col p-0 md:p-20">
           <h1 className="title p-5 md:p-0 text-5xl md:text-8xl font-black">Unconditional.</h1>
-          <div className="flex flex-row justify-center items-center pb-10 md:pb-0">
+          <div className="flex flex-row justify-center items-center p-0 md:p-3 pb-10 md:pb-0">
             <h2 className="subtitle text-md md:text-xl font-light">Give to your think an </h2>
             <a className='font-bold text-sm md:text-xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block md:inline md:w-auto mx-2' href='about'>Unconditional think</a>
           </div>
