@@ -47,11 +47,10 @@ const About: NextPage = () => {
           every day.{" "}
         </p>
 
-        <Link
-          className="font-bold text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block mx-2"
-          href="/"
-        >
-          Start your Unconditional.
+        <Link href="/" legacyBehavior>
+          <a className="font-bold text-xl md:text-2xl text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 border border-black rounded-lg p-3 block mx-2">
+            Start your Unconditional.
+          </a>
         </Link>
       </article>
 
