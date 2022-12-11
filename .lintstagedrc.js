@@ -5,7 +5,8 @@ const buildEslintCommand = (filenames) =>
     .map((f) => path.relative(process.cwd(), f))
     .join(" --file ")}`;
 
-const buildPrettierCommand = "npx prettier --write .";
+const buildPrettierCommand =
+  "npx prettier --write . --ignore-unknown --ignore-path .prettierignore";
 
 module.exports = {
   "*.{js,jsx,ts,tsx}": [buildEslintCommand, buildPrettierCommand],
