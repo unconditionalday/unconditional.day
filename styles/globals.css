@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.article{
+.article {
   background: white;
   padding: 16px 24px;
   position: relative;
@@ -20,10 +20,21 @@
   width: 100%;
   transform: scale(0.9) translateZ(0);
   filter: blur(15px);
-  background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+  background: linear-gradient(
+    to left,
+    #ff5770,
+    #e4428d,
+    #c42da8,
+    #9e16c3,
+    #6501de,
+    #9e16c3,
+    #c42da8,
+    #e4428d,
+    #ff5770
+  );
   background-size: 200% 200%;
   -webkit-animation: animateGlow 1.25s linear infinite;
-          animation: animateGlow 1.25s linear infinite;
+  animation: animateGlow 1.25s linear infinite;
 }
 
 * {

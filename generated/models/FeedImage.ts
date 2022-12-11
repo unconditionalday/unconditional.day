@@ -3,7 +3,6 @@
 /* eslint-disable */
 
 export type FeedImage = {
-    url: string;
-    title: string;
+  url: string;
+  title: string;
 };
-

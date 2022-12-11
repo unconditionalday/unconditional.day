@@ -8,11 +8,11 @@ module.exports = {
     "./public/**/*.html",
   ],
   plugins: [
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/typography"),
     {
       autoprefixer: {},
-    }
+    },
   ],
   theme: {},
-  darkMode: 'class',
+  darkMode: "class",
 };
