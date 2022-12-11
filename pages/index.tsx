@@ -46,7 +46,7 @@ const Home: NextPage = () => {
               </div>
               <div className="flex justify-center items-center text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                 <input type="search" value={query} onChange={(e) => setQuery(e.target.value)} id="default-search" className="md:p-4 md:pl-10 pl-5 text-center md:text-start bg-gray-50 w-full h-16 md:h-auto text-md md:text-sm" placeholder="Start search..." required></input>
-                <button type="submit" className="text-white mr-2 md:h-auto w-2/3 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-md md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black ">Search</button>
+                <button type="submit" className="text-white mr-2 md:h-auto w-2/3 md:w-1/2 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-md md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black ">Search</button>
               </div>
             </div>
           </form>
