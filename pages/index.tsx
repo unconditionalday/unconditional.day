@@ -1,20 +1,25 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
+import { Feeds } from "../components/Feeds";
 import Footer from "../components/Footer";
+import Loading from "../components/Loading";
 import { FeedItem, DefaultService } from "../generated";
 
 const Home: NextPage = () => {
   const [query, setQuery] = useState("");
   const [feeds, setFeeds] = useState<FeedItem[]>([]);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
   async function getFeed() {
     if (query && event) {
       event.preventDefault();
       try {
+        setLoading(true);
         const response = await DefaultService.getV1SearchFeed(query);
         setFeeds(response);
+        setLoading(false);
       } catch (e: any) {
         setError(e.message);
         console.log(e);
@@ -78,7 +83,7 @@ const Home: NextPage = () => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 id="default-search"
-                className="md:p-4 md:pl-10 pl-5 text-center md:text-start bg-gray-50 w-full h-16 md:h-auto text-md md:text-sm"
+                className="outline outline-0 md:p-4 md:pl-10 pl-5 text-center md:text-start bg-gray-50 w-full h-16 md:h-auto text-md md:text-sm"
                 placeholder="Start search..."
                 required
               ></input>
@@ -91,25 +96,9 @@ const Home: NextPage = () => {
             </div>
           </div>
         </form>
-        <main className="m-auto grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center mb-5 md:mb-0 md:pb-10 overflow-y-scroll h-screen md:overflow-y-visible md:h-auto">
-          {feeds.map((feed) => (
-            <a
-              key={feed.link}
-              href={feed.link}
-              className="article md:m-0 bg-white p-0 md:p-6 block w-5/6 h-max md:h-auto md:w-auto md:max-w-sm rounded-lg border border-black hover:shadow-2xl dark:bg-black dark:border-black dark:hover:bg-black"
-            >
-              <h6 className="font-extralight text-md md:text-sm md:p-0">
-                {feed.source}
-              </h6>
-              <h5 className="p-2 md:p-2 text-2xl md:text-2xl text-start font-bold tracking-tight text-gray-900 dark:text-white">
-                {feed.title}
-              </h5>
-              <hr />
-              <p className="p-2 md:p-2 text-md md:text-base text-justify text-gray-700 dark:text-gray-400">
-                {feed.summary}
-              </p>
-            </a>
-          ))}
+        <main className="m-auto mb-5 md:mb-0 md:pb-10 overflow-y-scroll h-screen md:overflow-y-visible md:h-auto">
+          {loading && <Loading />}
+          <Feeds feeds={feeds} />
         </main>
         <Footer />
       </div>
