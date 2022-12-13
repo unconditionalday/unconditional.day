@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             </a>
           </div>
         </header>
-        <form className="md:w-80 mx-auto md:p-0 w-80 mb-10" onSubmit={getFeed}>
+        <form className="w-80 mx-auto md:p-0 mb-10" onSubmit={getFeed}>
           <label
             htmlFor="default-search"
             className="text-sm font-medium text-gray-900 sr-only dark:text-gray-300"
@@ -83,13 +83,13 @@ const Home: NextPage = () => {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 id="default-search"
-                className="outline outline-0 md:p-4 md:pl-10 pl-5 text-center md:text-start bg-gray-50 w-full h-16 md:h-auto text-md md:text-sm"
+                className="outline outline-0 md:p-4 md:pl-10 text-center md:text-start bg-gray-50 w-full h-14 md:h-auto text-md md:text-sm"
                 placeholder="Start search..."
                 required
               ></input>
               <button
                 type="submit"
-                className="text-white mr-2 md:h-auto w-2/3 md:w-1/2 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-md md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black "
+                className="text-white mr-2 md:h-auto w-2/4 md:w-1/2 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black "
               >
                 Search
               </button>

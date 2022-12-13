@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="footer flex flex-col md:flex-row justify-between p-2 md:p-5 text-black border">
+    <footer className="footer flex flex-row justify-between p-2 md:p-5 text-black border">
       <div className="subfooter-left flex flex-col md:flex-col px-2 md:px-5">
         <h1 className="title text-md md:text-xl font-black rounded-lg">
           Unconditional.
