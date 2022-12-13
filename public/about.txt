@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Noto Sans Siddham
+- Font Author: Copyright 2022 The Noto Project Authors (https://github.com/notofonts/siddham)
+- Font Source: http://fonts.gstatic.com/s/notosanssiddham/v17/OZpZg-FwqiNLe9PELUikxTWDoCCeGqndk3Ic92ZH.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
