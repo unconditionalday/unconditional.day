@@ -41,10 +41,10 @@
 }
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 30px rgb(249 250 251 / var(--tw-bg-opacity)) inset !important;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 100px rgb(249 250 251 / var(--tw-bg-opacity)) inset !important;
 }
 
 @media (prefers-color-scheme: light) {
