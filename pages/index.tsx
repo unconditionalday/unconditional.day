@@ -113,7 +113,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </form>
-        <main className="m-auto  md:mb-0 md:pb-10 overflow-y-scroll max-h-screen md:overflow-y-visible md:h-auto">
+        <main className="m-auto md:mb-0 md:pb-10 overflow-y-scroll max-h-screen md:overflow-y-visible md:max-h-full">
           {loading && <Loading />}
           <Feeds feeds={feeds} />
         </main>
