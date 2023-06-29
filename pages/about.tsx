@@ -13,38 +13,52 @@ const About: NextPage = () => {
           spontaneous information research.
         </h1>
         <p>
-          Unconditional aims to be a place free of any outside influence for
-          free and spontaneous information research. This project was born above
-          all from a personal need: To inform ourselves by developing our own
-          critical sense and thinking and not to let someone else do it for us.
+          Unconditional aims to provide a platform for independent and
+          unfiltered information research, free from external influences. It was
+          primarily motivated by a personal desire to empower ourselves through
+          critical thinking, rather than relying on others for information.
         </p>
-        <h1>Where you are the only one who can decide what to think.</h1>
+        <h1>You are the only one who can decide what to think.</h1>
         <p>
           {" "}
-          This project uses no targeting system, no recommendation or ranking
-          system, and no profiling. The &quot;database&quot; referred to is a
-          public static file made available to the community, for the community.
-          In fact, the sources are decided by it. The only thing that is done is
-          to make the information available in a structured way, so that it can
-          be easily consulted and used.
+          This project does not employ any targeting, recommendation or ranking
+          system, nor does it utilize profiling techniques. It is a simple
+          search engine that indexes and serves information from a variety of
+          sources that are not filtered or ranked in any way. The sources list
+          is a public static file that anyone can contribute to. In few words:
+          <ul>
+            <li>
+              There is no tracking,profiling,ranking,targeting and
+              reccomendation.
+            </li>
+            <li>
+              The community itself contributes to populate the list of sources
+              to be served, resulting in a cluster of information that is:
+              Apolitical and Unbiased.{" "}
+            </li>
+          </ul>
         </p>
         <h1>It is much simpler than you think, help us.</h1>
         <p>
-          The project is completely <Link href="/">open source</Link> and anyone
-          can contribute by improving its code,usability and the sources of
-          information it refers to. The server is re-deployed hourly by indexing
-          and serving the new articles served by the sources it finds in the{" "}
-          <Link href="/">public source file</Link>. That's it! nothing more and
-          nothing less.
+          The project is completely{" "}
+          <Link href="https://github.com/unconditionalday">open source</Link>{" "}
+          and anyone can contribute by improving its code,usability and the
+          sources of information it refers to. The server is re-deployed hourly
+          by indexing and serving the new articles served by the sources it
+          finds in the{" "}
+          <Link href="https://github.com/unconditionalday/source">
+            public source file
+          </Link>
+          . That's it! nothing more and nothing less.
         </p>
-        <h1>The most important thing</h1>
+        <h1>Let us be clear</h1>
         <p>
           {" "}
-          Let us be clear, the project is intended to provide independent and
-          free information, not disinformation. We in no way accept biased,
-          disrespectful and discriminatory sources We believe in public
-          information and respect the great work that different news outlets do
-          every day.{" "}
+          The project's main objective is to offer unbiased and free
+          information, not misinformation. We strongly reject any sources that
+          are biased, disrespectful, or discriminatory. We uphold the value of
+          public information and appreciate the commendable efforts of various
+          news agencies on a daily basis.{" "}
         </p>
 
         <Link href="/" legacyBehavior>

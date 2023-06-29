@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Unconditional</title>
+        <title>Unconditional.</title>
         <meta name="description" content="Unconditional" />
         <link
           rel="apple-touch-icon"
@@ -58,7 +58,7 @@ const Home: NextPage = () => {
             Unconditional.
           </h1>
           <div className="flex flex-row justify-center items-center p-0 md:p-3 pb-10 md:pb-0">
-            <h2 className="subtitle text-md md:text-xl font-light">
+            <h2 className="subtitle text-md md:text-xl">
               Give to your think an{" "}
             </h2>
             <a
