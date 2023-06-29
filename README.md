@@ -3,11 +3,14 @@
 </p>
 
 ## 📦 Made with
+
 - Next.js
 - Typescript
 - styled-components
 - SWR
+
 ## 💻 How to run
+
 Install dependencies:
 
 ```bash

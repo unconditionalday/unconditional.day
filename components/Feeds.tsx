@@ -11,7 +11,7 @@ export const Feeds = (props: FeedsProps) => {
         <a
           key={feed.link}
           href={feed.link}
-          className="article md:m-0 bg-white p-0 md:p-6 block w-5/6 md:w-auto md:max-w-sm md:h-auto rounded-lg border border-black hover:shadow-2xl dark:bg-black dark:border-black dark:hover:bg-black"
+          className="article md:m-0 bg-white p-0 md:p-6 block w-5/6 md:max-w-sm md:max-h-sm rounded-lg border border-black hover:shadow-2xl dark:bg-black dark:border-black dark:hover:bg-black"
         >
           <h6 className="font-extralight text-xs md:text-sm md:p-0">
             {feed.source}
@@ -20,7 +20,7 @@ export const Feeds = (props: FeedsProps) => {
             {feed.title}
           </h5>
           <hr />
-          <p className="p-2 md:p-2 text-sm md:text-base text-justify text-gray-700 dark:text-gray-400">
+          <p className="m-2 md:m-2 text-sm md:text-base feed text-justify text-gray-700 dark:text-gray-400">
             {feed.summary}
           </p>
         </a>
