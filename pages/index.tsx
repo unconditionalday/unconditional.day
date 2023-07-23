@@ -9,6 +9,7 @@ import { FeedItem, DefaultService } from "../generated";
 const Home: NextPage = () => {
   const [query, setQuery] = useState("");
   const [feeds, setFeeds] = useState<FeedItem[]>([]);
+  const [isFeedsEmpty, setIsFeedsEmpty] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
         setLoading(true);
         const response = await DefaultService.getV1SearchFeed(query);
         setFeeds(response);
+        response.length === 0 ? setIsFeedsEmpty(true) : setIsFeedsEmpty(false);
         setLoading(false);
       } catch (e: any) {
         setError(e.message);
@@ -53,7 +55,7 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="flex flex-col min-h-screen">
-        <header className="header text-center flex flex-col p-0 md:p-20">
+        <header className="header text-center flex flex-col p-0 md:p-10">
           <h1 className="title p-5 md:p-0 text-5xl md:text-8xl font-black">
             Unconditional.
           </h1>
@@ -113,6 +115,15 @@ const Home: NextPage = () => {
             </div>
           </div>
         </form>
+        <hr />
+        {isFeedsEmpty && (
+          <div className="flex flex-col p-5 rounded-lg justify-center items-center m-auto md:mb-0 md:pb-10">
+            <h1 className="text-2xl md:text-4xl font-black">No feeds found.</h1>
+            <p className="text-sm md:text-md font-light">
+              Try searching for something else.
+            </p>
+          </div>
+        )}
         <main className="m-auto md:mb-0 md:pb-10 overflow-y-scroll max-h-screen md:overflow-y-visible md:max-h-full">
           {loading && <Loading />}
           <Feeds feeds={feeds} />
