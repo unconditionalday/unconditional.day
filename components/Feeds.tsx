@@ -6,7 +6,7 @@ export interface FeedsProps {
 
 export const Feeds = (props: FeedsProps) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+    <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
       {props.feeds.map((feed) => (
         <a
           key={feed.link}
