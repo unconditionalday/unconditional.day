@@ -2,13 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* * {
+  outline: 1px solid tomato;
+} */
+
 .article {
   padding: 16px 24px;
   position: relative;
   border-radius: 8px;
 }
 
-.article::after {
+.button {
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+/* .article::after {
   position: absolute;
   content: "";
   top: 15px;
@@ -34,7 +48,7 @@
   background-size: 200% 200%;
   -webkit-animation: animateGlow 1.25s linear infinite;
   animation: animateGlow 1.25s linear infinite;
-}
+} */
 
 .feed {
   overflow: hidden;

@@ -9,5 +9,6 @@ export type { OpenAPIConfig } from "./core/OpenAPI";
 export type { Error } from "./models/Error";
 export type { FeedImage } from "./models/FeedImage";
 export type { FeedItem } from "./models/FeedItem";
+export type { WikiResult } from "./models/WikiResult";
 
 export { DefaultService } from "./services/DefaultService";
