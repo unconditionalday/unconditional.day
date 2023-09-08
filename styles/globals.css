@@ -21,8 +21,31 @@
   text-decoration: none;
 }
 
+.button:hover {
+  background: linear-gradient(
+    to,
+    #ff5770,
+    #e4428d,
+    #c42da8,
+    #9e16c3,
+    #6501de,
+    #9e16c3,
+    #c42da8,
+    #e4428d,
+    #ff5770
+  );
+  background-size: 500% 500%;
+  animation: animateGlow 1.25s linear infinite;
+  }
 
-/* .article::after {
+
+  .pippo{
+    position: relative;
+    z-index: 1;
+  }
+
+
+ .pippo::after {
   position: absolute;
   content: "";
   top: 15px;
@@ -31,7 +54,6 @@
   z-index: -1;
   height: 100%;
   width: 100%;
-  transform: scale(0.9) translateZ(0);
   filter: blur(15px);
   background: linear-gradient(
     to left,
@@ -45,10 +67,11 @@
     #e4428d,
     #ff5770
   );
+  opacity: 0.2;
   background-size: 200% 200%;
-  -webkit-animation: animateGlow 1.25s linear infinite;
-  animation: animateGlow 1.25s linear infinite;
-} */
+  -webkit-animation: animateGlow 2.25s linear infinite;
+  animation: animateGlow 2.25s linear infinite;
+} 
 
 .feed {
   overflow: hidden;
