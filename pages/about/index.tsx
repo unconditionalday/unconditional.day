@@ -1,12 +1,10 @@
 import type { NextPage } from "next";
 import Link from "next/link";
-import Footer from "../components/Footer";
-import { Header } from "../components/Header";
+import { GetServerSideProps } from "next";
 
-const About: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
-    <div className="flex flex-col h-screen">
-      <Header />
+    <div className="flex flex-col ">
       <article className="prose lg:prose-xl p-10 md:p-5 md:m-auto">
         <h1>
           A place free of any outside influence for an unconditional and
@@ -20,24 +18,23 @@ const About: NextPage = () => {
         </p>
         <h1>You are the only one who can decide what to think.</h1>
         <p>
-          {" "}
           This project does not employ any targeting, recommendation or ranking
           system, nor does it utilize profiling techniques. It is a simple
           search engine that indexes and serves information from a variety of
           sources that are not filtered or ranked in any way. The sources list
           is a public static file that anyone can contribute to. In few words:
-          <ul>
-            <li>
-              There is no tracking,profiling,ranking,targeting and
-              reccomendation.
-            </li>
-            <li>
-              The community itself contributes to populate the list of sources
-              to be served, resulting in a cluster of information that is:
-              Apolitical and Unbiased.{" "}
-            </li>
-          </ul>
         </p>
+        <ul>
+          <li>
+            There is no tracking,profiling,ranking,targeting and reccomendation.
+          </li>
+          <li>
+            The community itself contributes to populate the list of sources to
+            be served, resulting in a cluster of information that is: Apolitical
+            and Unbiased.{" "}
+          </li>
+        </ul>
+
         <h1>It is much simpler than you think, help us.</h1>
         <p>
           The project is completely{" "}
@@ -67,10 +64,12 @@ const About: NextPage = () => {
           </a>
         </Link>
       </article>
-
-      <Footer />
     </div>
   );
 };
 
-export default About;
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  return { props: { hideSearchBar: true } };
+};
+
+export default AboutPage;
