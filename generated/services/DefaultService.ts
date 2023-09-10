@@ -14,7 +14,7 @@ export class DefaultService {
    * @throws ApiError
    */
   public static getV1SearchFeed(
-    query: string
+    query: string,
   ): CancelablePromise<Array<FeedItem>> {
     return __request(OpenAPI, {
       method: "GET",
