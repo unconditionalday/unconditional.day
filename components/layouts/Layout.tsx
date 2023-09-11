@@ -46,11 +46,11 @@ const Layout: FunctionComponent<LayoutProps> = ({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="flex flex-col h-screen overflow-scroll">
+      <div className="flex flex-col h-screen ">
         <Header hideTagline={hideSearchBar} />
         {!hideSearchBar && <SearchForm onSubmitted={onSubmitted} />}
         <hr />
-        <main className="m-auto md:mb-0 md:pb-10 overflow-y-scroll  md:overflow-y-visible">
+        <main className="m-auto md:mb-0 pb-10  md:overflow-y-visible">
           {children}
         </main>
         <Footer />
