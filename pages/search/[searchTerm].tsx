@@ -18,10 +18,8 @@ const SearchPage: NextPage = () => {
           </p>
         </div>
       )}
-      <main className="m-auto md:mb-0 md:pb-10 overflow-y-scroll max-h-screen md:overflow-y-visible md:max-h-full">
         {isLoading && <Loading />}
         {feeds && <Feeds feeds={feeds} />}
-      </main>
     </>
   );
 };
