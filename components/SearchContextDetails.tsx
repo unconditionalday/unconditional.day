@@ -6,7 +6,7 @@ export const SearchContext = (contextDetails: SearchContextDetails) => {
       <div className="flex flex-col md:flex-row items-center">
         <div className="md:flex-shrink-0">
           <img
-            className="w-32 h-32 md:w-48 md:h-48 object-cover rounded-lg md:m-5"
+            className="w-32 h-32 md:w-48 md:h-48 object-cover shadow-lg rounded-lg md:m-5"
             src={contextDetails.thumbnail}
             alt="Thumbnail image"
           />
