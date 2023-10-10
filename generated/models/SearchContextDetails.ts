@@ -2,7 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 
-export type WikiResult = {
+export type SearchContextDetails = {
   title: string;
   link: string;
   summary: string;
