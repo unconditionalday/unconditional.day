@@ -2,7 +2,8 @@
 /* tslint:disable */
 /* eslint-disable */
 import type { FeedItem } from "../models/FeedItem";
-import type { WikiResult } from "../models/WikiResult";
+import type { SearchContextDetails } from "../models/SearchContextDetails";
+import type { ServerVersion } from "../models/ServerVersion";
 
 import type { CancelablePromise } from "../core/CancelablePromise";
 import { OpenAPI } from "../core/OpenAPI";
@@ -31,21 +32,38 @@ export class DefaultService {
 
   /**
    * @param query
-   * @returns WikiResult OK
+   * @returns SearchContextDetails OK
    * @throws ApiError
    */
-  public static getV1InformerWiki(
+  public static getV1SearchContext(
     query: string,
-  ): CancelablePromise<WikiResult> {
+  ): CancelablePromise<SearchContextDetails> {
     return __request(OpenAPI, {
       method: "GET",
-      url: "/v1/informer/wiki/{query}",
+      url: "/v1/search/context/{query}",
       path: {
         query: query,
       },
       errors: {
         500: `Internal Server Error`,
       },
+    });
+  }
+
+  /**
+   * Your GET endpoint
+   * @param requestBody
+   * @returns ServerVersion OK
+   * @throws ApiError
+   */
+  public static getV1Version(
+    requestBody?: any,
+  ): CancelablePromise<ServerVersion> {
+    return __request(OpenAPI, {
+      method: "GET",
+      url: "/v1/version",
+      body: requestBody,
+      mediaType: "application/json",
     });
   }
 }
