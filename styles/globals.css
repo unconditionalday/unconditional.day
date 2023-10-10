@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  outline: 1px solid tomato;
-} */
+* {
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 100px rgb(249 250 251 / var(--tw-bg-opacity)) inset !important;
+}
 
 .article {
   padding: 16px 24px;
@@ -36,16 +43,14 @@
   );
   background-size: 500% 500%;
   animation: animateGlow 1.25s linear infinite;
-  }
+}
 
+.hero-card {
+  position: relative;
+  z-index: 1;
+}
 
-  .pippo{
-    position: relative;
-    z-index: 1;
-  }
-
-
- .pippo::after {
+.hero-card::after {
   position: absolute;
   content: "";
   top: 15px;
@@ -69,26 +74,15 @@
   );
   opacity: 0.2;
   background-size: 200% 200%;
-  -webkit-animation: animateGlow 2.25s linear infinite;
-  animation: animateGlow 2.25s linear infinite;
-} 
+  -webkit-animation: animateGlow 10s ease infinite;
+  animation: animateGlow 10s ease infinite;
+}
 
 .feed {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 10;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 100px rgb(249 250 251 / var(--tw-bg-opacity)) inset !important;
 }
 
 @media (prefers-color-scheme: light) {
