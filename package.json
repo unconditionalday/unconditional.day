@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "npx prettier --write .",
-    "generate": "openapi --input /Users/luigibarbato/Dev/Projects/api/swagger.yaml --output ./generated",
+    "generate": "openapi --input $UNCONDITIONAL_API_PATH/api/swagger.yaml --output ./generated",
     "prepare": "npx husky install"
   },
   "dependencies": {
