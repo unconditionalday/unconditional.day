@@ -14,7 +14,7 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.5.8",
     "@vercel/analytics": "^0.1.11",
-    "autoprefixer": "^10.4.12",
+    "autoprefixer": "^10.4.16",
     "next": "12.3.1",
     "openapi-typescript-codegen": "^0.25.0",
     "postcss": "^8.4.17",
