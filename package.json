@@ -16,7 +16,7 @@
     "@vercel/analytics": "^0.1.6",
     "autoprefixer": "^10.4.12",
     "next": "12.3.1",
-    "openapi-typescript-codegen": "^0.23.0",
+    "openapi-typescript-codegen": "^0.25.0",
     "postcss": "^8.4.17",
     "react": "18.2.0",
     "react-dom": "18.2.0",
