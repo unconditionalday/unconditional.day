@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@tailwindcss/typography':
-    specifier: ^0.5.8
-    version: 0.5.8(tailwindcss@3.1.8)
+    specifier: ^0.5.10
+    version: 0.5.10(tailwindcss@3.1.8)
   '@vercel/analytics':
     specifier: ^0.1.11
     version: 0.1.11(react@18.2.0)
@@ -452,8 +452,8 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /@tailwindcss/typography@0.5.8(tailwindcss@3.1.8):
-    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
+  /@tailwindcss/typography@0.5.10(tailwindcss@3.1.8):
+    resolution: {integrity: sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
