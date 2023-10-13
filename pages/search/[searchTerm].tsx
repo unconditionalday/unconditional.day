@@ -18,8 +18,8 @@ const SearchPage: NextPage = () => {
           </p>
         </div>
       )}
-        {isLoading && <Loading />}
-        {feeds && <Feeds feeds={feeds} />}
+      {isLoading && <Loading />}
+      {feeds && <Feeds feeds={feeds} />}
     </>
   );
 };

@@ -50,9 +50,7 @@ const Layout: FunctionComponent<LayoutProps> = ({
         <Header hideTagline={hideSearchBar} />
         {!hideSearchBar && <SearchForm onSubmitted={onSubmitted} />}
         <hr />
-        <main className="m-auto md:mb-0 pb-10  md:overflow-y-visible">
-          {children}
-        </main>
+        <main className="m-auto md:overflow-y-visible">{children}</main>
         <Footer />
       </div>
     </>
