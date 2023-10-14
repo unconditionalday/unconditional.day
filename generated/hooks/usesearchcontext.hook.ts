@@ -5,8 +5,8 @@ import { KeyedMutator } from "swr/_internal";
 import { FeedItem } from "../models/FeedItem";
 
 type FetcherInput = {
-  key: string;
-  query: string | undefined;
+  key: string | null;
+  query: string;
 };
 
 const fetcher: Fetcher<SearchContextDetails, FetcherInput> = ({ key, query }) =>
@@ -27,7 +27,8 @@ const useSearchContext: IUseSearchContextDetails = (
   query: string | undefined,
 ) => {
   const key = query ? `context_${query}` : null;
-  const fetcherInput = { key, query };
+  const defaultQuery = query !== undefined ? query : "";
+  const fetcherInput: FetcherInput = { key, query: defaultQuery };
   const { data, error, isLoading, mutate } = useSWR(key, () =>
     fetcher(fetcherInput),
   );

@@ -4,7 +4,7 @@ import { DefaultService } from "../services/DefaultService";
 import { KeyedMutator } from "swr/_internal";
 
 type FetcherInput = {
-  key: string;
+  key: string | null;
   query: string;
 };
 
@@ -24,7 +24,8 @@ type IUseFeeds = {
 
 const useFeeds: IUseFeeds = (query: string | undefined) => {
   const key = query ? `feed_${query}` : null;
-  const fetcherInput = { key, query };
+  const defaultQuery = query !== undefined ? query : "";
+  const fetcherInput: FetcherInput = { key, query: defaultQuery };
   const { data, error, isLoading, mutate } = useSWR(key, () =>
     fetcher(fetcherInput),
   );
