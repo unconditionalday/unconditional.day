@@ -5,7 +5,6 @@ import { Feeds } from "../../components/Feeds";
 import useFeeds from "../../generated/hooks/usefeeds.hook";
 import useSearchContext from "../../generated/hooks/usesearchcontext.hook";
 import { SearchContext } from "../../components/SearchContextDetails";
-import { useEffect, useState } from "react";
 
 const SearchPage: NextPage = () => {
   const router = useRouter();
@@ -13,7 +12,7 @@ const SearchPage: NextPage = () => {
   let query = searchTerm as string;
   const { feeds, isLoading, areFeedsEmpty } = useFeeds(query);
   const { searchContextDetails, isEmpty } = useSearchContext(
-    areFeedsEmpty ? null : query,
+    areFeedsEmpty ? undefined : query,
   );
 
   return (
