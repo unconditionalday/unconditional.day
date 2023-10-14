@@ -3,7 +3,12 @@ import { FeedItem } from "../models/FeedItem";
 import { DefaultService } from "../services/DefaultService";
 import { KeyedMutator } from "swr/_internal";
 
-const fetcher: Fetcher<FeedItem[], string> = (query) =>
+type FetcherInput = {
+  key: string;
+  query: string;
+};
+
+const fetcher: Fetcher<FeedItem[], FetcherInput> = ({ key, query }) =>
   DefaultService.getV1SearchFeed(query);
 
 type IUseFeedsOutcome = {
@@ -18,7 +23,11 @@ type IUseFeeds = {
 };
 
 const useFeeds: IUseFeeds = (query: string | undefined) => {
-  const { data, error, isLoading, mutate } = useSWR(query, fetcher);
+  const key = query ? `feed_${query}` : null;
+  const fetcherInput = { key, query };
+  const { data, error, isLoading, mutate } = useSWR(key, () =>
+    fetcher(fetcherInput),
+  );
   return {
     feeds: data,
     error,

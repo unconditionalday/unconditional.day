@@ -1,13 +1,21 @@
 import { NextPage } from "next";
+import { useRouter } from "next/router";
 import Loading from "../../components/Loading";
 import { Feeds } from "../../components/Feeds";
 import useFeeds from "../../generated/hooks/usefeeds.hook";
-import { useRouter } from "next/router";
+import useSearchContext from "../../generated/hooks/usesearchcontext.hook";
+import { SearchContext } from "../../components/SearchContextDetails";
+import { useEffect, useState } from "react";
 
 const SearchPage: NextPage = () => {
   const router = useRouter();
   const { searchTerm } = router.query;
-  const { feeds, isLoading, areFeedsEmpty } = useFeeds(searchTerm as string);
+  let query = searchTerm as string;
+  const { feeds, isLoading, areFeedsEmpty } = useFeeds(query);
+  const { searchContextDetails, isEmpty } = useSearchContext(
+    areFeedsEmpty ? null : query,
+  );
+
   return (
     <>
       {areFeedsEmpty && (
@@ -17,6 +25,9 @@ const SearchPage: NextPage = () => {
             Try searching for something else.
           </p>
         </div>
+      )}
+      {searchContextDetails && !isEmpty && (
+        <SearchContext contextDetails={searchContextDetails} />
       )}
       {isLoading && <Loading />}
       {feeds && <Feeds feeds={feeds} />}
