@@ -13,7 +13,7 @@ const SearchForm: FunctionComponent<SearchFormProps> = ({ onSubmitted }) => {
 
   return (
     <form
-      className="w-80 mx-auto md:p-0 mb-10"
+      className="w-50 md:w-80 text-sm mx-auto md:p-0 mb-10"
       onSubmit={handleQuerySubmitRequest}
     >
       <label
@@ -46,13 +46,13 @@ const SearchForm: FunctionComponent<SearchFormProps> = ({ onSubmitted }) => {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             id="default-search"
-            className="outline outline-0 md:p-4 md:pl-10 text-center md:text-start bg-gray-50 w-full h-14 md:h-auto text-md md:text-sm"
+            className="outline outline-0 md:p-4 md:pl-10 pl-10 text-start bg-gray-50 w-full h-14 md:h-auto text-md md:text-sm"
             placeholder="Start search..."
             required
           ></input>
           <button
             type="submit"
-            className="text-white mr-2 md:h-auto w-2/4 md:w-1/2 bg-black hover:bg-black focus:ring-4 focus:outline-none focus:ring-black font-medium rounded-lg text-sm md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black "
+            className="text-white mr-2 md:h-auto w-2/4 md:w-1/2 bg-black hover:bg-black focus:ring-4 focus:outline-none font-medium rounded-lg text-sm md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black "
           >
             Search
           </button>

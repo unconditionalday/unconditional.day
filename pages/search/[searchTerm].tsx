@@ -26,7 +26,9 @@ const SearchPage: NextPage = () => {
         </div>
       )}
       {searchContextDetails && !isEmpty && (
-        <SearchContext contextDetails={searchContextDetails} />
+        <div className="mt-10 mb-10 md:mt-0 md:mb-0">
+          <SearchContext contextDetails={searchContextDetails} />
+        </div>
       )}
       {isLoading && <Loading />}
       {feeds && <Feeds feeds={feeds} />}

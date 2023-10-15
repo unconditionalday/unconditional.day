@@ -9,12 +9,10 @@ interface PageProps {
 }
 function MyApp({ Component, pageProps }: AppProps<PageProps>) {
   return (
-    <SWRConfig value={{ provider: () => new Map() }}>
-      <Layout hideSearchBar={pageProps.hideSearchBar}>
-        <Component {...pageProps} />
-        <Analytics />
-      </Layout>
-    </SWRConfig>
+    <Layout hideSearchBar={pageProps.hideSearchBar}>
+      <Component {...pageProps} />
+      <Analytics />
+    </Layout>
   );
 }
 

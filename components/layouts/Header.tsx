@@ -4,12 +4,16 @@ import { FunctionComponent } from "react";
 interface HeaderProps {
   hideTagline?: boolean;
 }
-export const Header: FunctionComponent<HeaderProps> = ({ hideTagline }) => {
+export const Header: FunctionComponent<HeaderProps> = ({
+  hideTagline = true,
+}) => {
   return (
     <header className="header text-center flex flex-col p-0 md:p-10">
-      <h1 className="title p-5 md:p-0 text-5xl md:text-8xl font-black">
-        Unconditional.
-      </h1>
+      <Link href="/">
+        <h1 className="title p-10 md:p-0 text-4xl md:text-8xl font-black">
+          Unconditional.
+        </h1>
+      </Link>
       {!hideTagline && (
         <div className="flex flex-row justify-center items-center p-0 md:p-3 pb-10 md:pb-0">
           <h2 className="subtitle text-md md:text-xl">
