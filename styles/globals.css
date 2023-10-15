@@ -78,7 +78,7 @@ input:-webkit-autofill:active {
   animation: animateGlow 10s ease infinite;
 }
 
-.feed {
+.text-summarize {
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;

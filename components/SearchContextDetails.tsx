@@ -16,10 +16,10 @@ export const SearchContext = (props: SearchContextProps) => {
           />
         </div>
         <div className="prose text-justify md:text-start p-3 md:p-6">
-          <div className="prose-xl md:prose-2xl prose-headings font-bold text-gray-900">
+          <div className="prose-2xl prose-headings font-bold text-gray-900">
             {props.contextDetails.title}
           </div>
-          <p className="mt-2 text-black prose-sm md:prose-base">
+          <p className="mt-2 text-black prose-base md:prose-base text-summarize">
             {props.contextDetails.summary}
           </p>
           <div className="text-center md:text-start">
