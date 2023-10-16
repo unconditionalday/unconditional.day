@@ -1,6 +1,6 @@
 import useSWR, { Fetcher } from "swr";
-import { FeedItem } from "../models/FeedItem";
-import { DefaultService } from "../services/DefaultService";
+import { FeedItem } from "../generated/models/FeedItem";
+import { DefaultService } from "../generated/services/DefaultService";
 import { KeyedMutator } from "swr/_internal";
 
 type FetcherInput = {

@@ -2,8 +2,8 @@ import { NextPage } from "next";
 import { useRouter } from "next/router";
 import Loading from "../../components/Loading";
 import { Feeds } from "../../components/Feeds";
-import useFeeds from "../../generated/hooks/usefeeds.hook";
-import useSearchContext from "../../generated/hooks/usesearchcontext.hook";
+import useFeeds from "../../hooks/usefeeds.hook";
+import useSearchContext from "../../hooks/usesearchcontext.hook";
 import { SearchContext } from "../../components/SearchContextDetails";
 
 const SearchPage: NextPage = () => {

@@ -1,8 +1,8 @@
 import useSWR, { Fetcher } from "swr";
-import { SearchContextDetails } from "../models/SearchContextDetails";
-import { DefaultService } from "../services/DefaultService";
+import { SearchContextDetails } from "../generated/models/SearchContextDetails";
+import { DefaultService } from "../generated/services/DefaultService";
 import { KeyedMutator } from "swr/_internal";
-import { FeedItem } from "../models/FeedItem";
+import { FeedItem } from "../generated/models/FeedItem";
 
 type FetcherInput = {
   key: string | null;
