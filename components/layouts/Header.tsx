@@ -4,9 +4,7 @@ import { FunctionComponent } from "react";
 interface HeaderProps {
   hideTagline?: boolean;
 }
-export const Header: FunctionComponent<HeaderProps> = ({
-  hideTagline = true,
-}) => {
+export const Header: FunctionComponent<HeaderProps> = ({ hideTagline }) => {
   return (
     <header className="header text-center flex flex-col p-0 md:p-10">
       <Link href="/">
