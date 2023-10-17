@@ -6,7 +6,7 @@ export interface FeedsProps {
 
 export const Feeds = (props: FeedsProps) => {
   return (
-    <div className="md:columns-2 lg:columns-3 columns-1 gap-8 px-8 mb-10 container">
+    <div className="md:columns-2 lg:columns-3 columns-1 gap-8 px-8 mb-10 mt-10 container">
       {props.feeds.map((feed) => (
         <div
           key={feed.link}
