@@ -8,10 +8,15 @@ import { useRouter } from "next/router";
 interface LayoutProps {
   children: React.ReactNode;
   hideSearchBar?: boolean;
+  hideTagLine?: boolean;
+  isMobile: boolean;
 }
+
 const Layout: FunctionComponent<LayoutProps> = ({
   children,
   hideSearchBar,
+  hideTagLine,
+  isMobile,
 }) => {
   const router = useRouter();
 
@@ -47,7 +52,7 @@ const Layout: FunctionComponent<LayoutProps> = ({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="flex flex-col h-screen ">
-        <Header hideTagline={hideSearchBar} />
+        <Header hideTagline={hideTagLine || isMobile} />
         {!hideSearchBar && <SearchForm onSubmitted={onSubmitted} />}
         <hr />
         <main className="m-auto overflow-y-scroll md:overflow-y-visible">

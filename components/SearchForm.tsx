@@ -40,7 +40,7 @@ const SearchForm: FunctionComponent<SearchFormProps> = ({ onSubmitted }) => {
             ></path>
           </svg>
         </div>
-        <div className="flex justify-center items-center text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        <div className="flex justify-center items-center text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white ">
           <input
             type="search"
             value={query}
@@ -52,7 +52,7 @@ const SearchForm: FunctionComponent<SearchFormProps> = ({ onSubmitted }) => {
           ></input>
           <button
             type="submit"
-            className="text-white mr-2 md:h-auto w-2/4 md:w-1/2 bg-black hover:bg-black focus:ring-4 focus:outline-none font-medium rounded-lg text-sm md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black "
+            className="text-white mr-2 md:h-auto w-2/4 md:w-1/2 bg-black hover:bg-black focus:outline-none font-medium rounded-lg text-sm md:text-sm p-2 md:px-4 md:py-2 dark:bg-black dark:hover:bg-black dark:focus:ring-black"
           >
             Search
           </button>
