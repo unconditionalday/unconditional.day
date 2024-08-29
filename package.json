@@ -12,7 +12,7 @@
     "prepare": "npx husky install"
   },
   "dependencies": {
-    "@tailwindcss/typography": "^0.5.14",
+    "@tailwindcss/typography": "^0.5.15",
     "@vercel/analytics": "^0.1.11",
     "autoprefixer": "^10.4.20",
     "next": "14.2.7",
