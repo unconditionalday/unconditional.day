@@ -17,7 +17,7 @@
     "autoprefixer": "^10.5.2",
     "next": "16.2.9",
     "openapi-typescript-codegen": "^0.31.0",
-    "postcss": "^8.5.15",
+    "postcss": "^8.5.16",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-icons": "^4.12.0",
