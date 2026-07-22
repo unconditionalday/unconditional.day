@@ -15,7 +15,7 @@
     "@tailwindcss/typography": "^0.5.20",
     "@vercel/analytics": "^0.1.11",
     "autoprefixer": "^10.5.4",
-    "next": "16.2.10",
+    "next": "16.2.11",
     "openapi-typescript-codegen": "^0.31.0",
     "postcss": "^8.5.21",
     "react": "18.3.1",
